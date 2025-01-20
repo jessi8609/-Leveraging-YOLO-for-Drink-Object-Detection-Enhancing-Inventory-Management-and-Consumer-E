@@ -1,0 +1,124 @@
+[
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "ex1",
+        "description": "ex1",
+        "peekOfCode": "model = YOLO(\"yolo11n.pt\")  # n, s, m, l, x versions available\n# Perform object detection on an image\nresults = model.predict(source=\"C:/Users/13/Desktop/YOLO/park.PNG\")\n# Display the results\nresults[0].show()  # Show the first image results",
+        "detail": "ex1",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "ex1",
+        "description": "ex1",
+        "peekOfCode": "results = model.predict(source=\"C:/Users/13/Desktop/YOLO/park.PNG\")\n# Display the results\nresults[0].show()  # Show the first image results",
+        "detail": "ex1",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "ex2",
+        "description": "ex2",
+        "peekOfCode": "model = YOLO(\"yolo11n.pt\")  # Load your YOLO model\n# Step 2: Initialize webcam stream\ncap = cv2.VideoCapture(0)  # Use 0 for the default webcam\nif not cap.isOpened():\n    print(\"Error: Could not open webcam.\")\n    exit()\nwhile True:\n    # Step 3: Read a frame from the webcam\n    ret, frame = cap.read()\n    if not ret:",
+        "detail": "ex2",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "ex2",
+        "description": "ex2",
+        "peekOfCode": "cap = cv2.VideoCapture(0)  # Use 0 for the default webcam\nif not cap.isOpened():\n    print(\"Error: Could not open webcam.\")\n    exit()\nwhile True:\n    # Step 3: Read a frame from the webcam\n    ret, frame = cap.read()\n    if not ret:\n        print(\"Error: Could not read frame.\")\n        break",
+        "detail": "ex2",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "ex3",
+        "description": "ex3",
+        "peekOfCode": "model = YOLO(\"yolo11n.pt\")\n# Kamera ochish\ncap = cv2.VideoCapture(0)\nif not cap.isOpened():\n    print(\"Error: Could not open webcam.\")\n    exit()\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        print(\"Error: Could not read frame.\")",
+        "detail": "ex3",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "ex3",
+        "description": "ex3",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\nif not cap.isOpened():\n    print(\"Error: Could not open webcam.\")\n    exit()\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        print(\"Error: Could not read frame.\")\n        break\n    # Model orqali bashorat",
+        "detail": "ex3",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "ex4sig",
+        "description": "ex4sig",
+        "peekOfCode": "model = YOLO(\"yolo11n.pt\")  # pretrained YOLO11n model\n# Run batched inference on a list of images\nresults = model([r\"C:\\Users\\13\\Desktop\\YOLO\\park.PNG\"])  # return a list of Results objects\n# Process results list\nfor result in results:\n    boxes = result.boxes  # Boxes object for bounding box outputs\n    masks = result.masks  # Masks object for segmentation masks outputs\n    keypoints = result.keypoints  # Keypoints object for pose outputs\n    probs = result.probs  # Probs object for classification outputs\n    obb = result.obb  # Oriented boxes object for OBB outputs",
+        "detail": "ex4sig",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "ex4sig",
+        "description": "ex4sig",
+        "peekOfCode": "results = model([r\"C:\\Users\\13\\Desktop\\YOLO\\park.PNG\"])  # return a list of Results objects\n# Process results list\nfor result in results:\n    boxes = result.boxes  # Boxes object for bounding box outputs\n    masks = result.masks  # Masks object for segmentation masks outputs\n    keypoints = result.keypoints  # Keypoints object for pose outputs\n    probs = result.probs  # Probs object for classification outputs\n    obb = result.obb  # Oriented boxes object for OBB outputs\n    result.show()  # display to screen\n    result.save(filename=\"result.jpg\")  # save to disk",
+        "detail": "ex4sig",
+        "documentation": {}
+    }
+]
