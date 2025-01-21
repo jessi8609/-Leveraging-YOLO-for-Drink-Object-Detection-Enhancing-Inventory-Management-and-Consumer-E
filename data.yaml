@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['drink']
+
+roboflow:
+  workspace: convenience-store-object-detection
+  project: canettes-gglzi-lzd0g
+  version: 2
+  license: Public Domain
+  url: https://universe.roboflow.com/convenience-store-object-detection/canettes-gglzi-lzd0g/dataset/2
